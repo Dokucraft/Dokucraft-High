@@ -1,0 +1,9 @@
+{ "variants": {
+    "": [
+      { "model": "block/cobweb/0" },
+      { "model": "block/cobweb/1" },
+      { "model": "block/cobweb/2" },
+	  { "model": "block/cobweb/3" }
+    ]
+  }
+}

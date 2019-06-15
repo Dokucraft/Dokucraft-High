@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"edge": "block/iron_bars",
+		"particle": "block/iron_bars"
+	},
+	"elements": [
+		{
+			"from": [7, 0.001, 7],
+			"to": [9, 0.001, 9],
+			"faces": {
+				"up": {"uv": [7, 7, 9, 9], "rotation": 90, "texture": "#edge"},
+				"down": {"uv": [7, 7, 8.5, 9], "texture": "#edge"}
+			}
+		},
+		{
+			"from": [7, 15.999, 7],
+			"to": [9, 15.999, 9],
+			"faces": {
+				"up": {"uv": [7, 7, 9, 9], "rotation": 90, "texture": "#edge"},
+				"down": {"uv": [7, 7, 8.5, 9], "texture": "#edge"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "iron_bars_post_ends",
+			"children": [0, 1]
+		}
+	]
+}

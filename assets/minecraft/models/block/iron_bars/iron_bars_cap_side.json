@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "block/iron_bars"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 9],
+			"to": [9, 16, 9],
+			"faces": {
+				"south": {"uv": [7, 0, 8.5, 16], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "iron_bars_cap_side",
+			"children": [
+				{
+					"name": "iron_bars_cap_side",
+					"children": [0]
+				}
+			]
+		}
+	]
+}
