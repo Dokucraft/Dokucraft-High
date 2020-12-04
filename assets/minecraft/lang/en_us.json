@@ -127,5 +127,6 @@
 
   "menu.singleplayer": "§f逡 Singleplayer",
   "menu.multiplayer": "§f逢 Multiplayer",
-  "menu.online": "§f連 Realms"
+  "menu.online": "§f連 Realms",
+	"selectServer.direct": "Direct Connect"
 }
