@@ -1,1 +1,9 @@
-{"pack":{"pack_format":6,"description":"§9High and Dry\n§6V1.16.2 By Dokucraft TSC"},"meta":{"game_version":"1.16.2"}}
+{
+  "pack": {
+    "pack_format": 7,
+    "description": "§9High and Dry\n§6V1.17.0 By Dokucraft TSC"
+  },
+  "meta": {
+    "game_version": "1.17.0"
+  }
+}
