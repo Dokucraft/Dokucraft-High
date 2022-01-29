@@ -1,0 +1,18 @@
+{ "multipart": [
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/iron/sides/0" },
+        { "model": "minecraft:block/deepslate_ores/iron/sides/1" },
+        { "model": "minecraft:block/deepslate_ores/iron/sides/2" },
+        { "model": "minecraft:block/deepslate_ores/iron/sides/3" },
+        { "model": "minecraft:block/deepslate_ores/iron/sides/4" }
+      ]
+    },
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/iron/ends/0" },
+        { "model": "minecraft:block/deepslate_ores/iron/ends/1" },
+        { "model": "minecraft:block/deepslate_ores/iron/ends/2" },
+        { "model": "minecraft:block/deepslate_ores/iron/ends/3" }
+      ]
+    }
+  ]
+}

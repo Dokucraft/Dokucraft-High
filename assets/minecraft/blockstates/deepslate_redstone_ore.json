@@ -1,0 +1,34 @@
+{
+	"multipart": [
+		{ "when": { "lit": false }, "apply": [
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/sides/0" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/sides/1" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/sides/2" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/sides/3" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/sides/4" }
+			]
+		},
+		{ "when": { "lit": false }, "apply": [
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/ends/0" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/ends/1" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/ends/2" },
+				{ "model": "minecraft:block/deepslate_ores/redstone_off/ends/3" }
+			]
+		},
+		{ "when": { "lit": true }, "apply": [
+				{ "model": "minecraft:block/deepslate_ores/redstone/sides/0" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/sides/1" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/sides/2" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/sides/3" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/sides/4" }
+			]
+		},
+		{ "when": { "lit": true }, "apply": [
+				{ "model": "minecraft:block/deepslate_ores/redstone/ends/0" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/ends/1" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/ends/2" },
+				{ "model": "minecraft:block/deepslate_ores/redstone/ends/3" }
+			]
+		}
+	]   
+}

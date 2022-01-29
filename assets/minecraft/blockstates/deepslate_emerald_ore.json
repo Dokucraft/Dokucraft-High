@@ -1,0 +1,16 @@
+{ "multipart": [
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/emerald/sides/0" },
+        { "model": "minecraft:block/deepslate_ores/emerald/sides/1" },
+        { "model": "minecraft:block/deepslate_ores/emerald/sides/2" },
+        { "model": "minecraft:block/deepslate_ores/emerald/sides/3" },
+        { "model": "minecraft:block/deepslate_ores/emerald/sides/4" }
+      ]
+    },
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/emerald/ends/0" },
+        { "model": "minecraft:block/deepslate_ores/emerald/ends/1" }
+      ]
+    }
+  ]
+}

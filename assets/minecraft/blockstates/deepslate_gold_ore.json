@@ -1,0 +1,18 @@
+{ "multipart": [
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/gold/sides/0" },
+        { "model": "minecraft:block/deepslate_ores/gold/sides/1" },
+        { "model": "minecraft:block/deepslate_ores/gold/sides/2" },
+        { "model": "minecraft:block/deepslate_ores/gold/sides/3" },
+        { "model": "minecraft:block/deepslate_ores/gold/sides/4" }
+      ]
+    },
+    { "apply": [
+        { "model": "minecraft:block/deepslate_ores/gold/ends/0" },
+        { "model": "minecraft:block/deepslate_ores/gold/ends/1" },
+        { "model": "minecraft:block/deepslate_ores/gold/ends/2" },
+        { "model": "minecraft:block/deepslate_ores/gold/ends/3" }
+      ]
+    }
+  ]
+}
