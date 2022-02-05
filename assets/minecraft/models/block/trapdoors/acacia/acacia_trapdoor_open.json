@@ -1,1 +1,1 @@
-{"parent":"block/trapdoors/template_orientable_trapdoor_open","textures":{"trapdoor":"block/trapdoors/acacia_trapdoor","sides":"block/trapdoors/acacia_trapdoor_rim"}}
+{"parent":"block/trapdoors/template_trapdoor_open","textures":{"trapdoor":"block/trapdoors/acacia_trapdoor","sides":"block/trapdoors/acacia_trapdoor_rim"}}
