@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=lower": { "model": "block/plants/lilac/lilac_bottom" },
+        "half=upper": [
+        	{ "model": "block/plants/lilac/0" },
+        	{ "model": "block/plants/lilac/1" },
+        	{ "model": "block/plants/lilac/2" }
+        ]
+    }
+}
