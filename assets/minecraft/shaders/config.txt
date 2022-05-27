@@ -48,3 +48,25 @@
 
 // Remove this line to disable the desaturation of the biome color on highlights on translucent materials (used to make the highlights on water look better)
 #define ENABLE_DESATURATE_TRANSLUCENT_HIGHLIGHT_BIOME_COLOR
+
+
+
+// ============================================================================
+//  End sky
+// ============================================================================
+
+// Remove the two slashes at the start of this line to enable the custom end sky
+// #define ENABLE_CUSTOM_END_SKY
+
+// Remove this line to disable the glow around the rift in the end sky
+#define ENABLE_END_SKY_RIFT_GLOW
+
+// Remove this line to disable the stars outside of the rift in the end sky
+#define ENABLE_END_SKY_STARS_OUTSIDE_RIFT
+
+// Remove this line to disable the stars inside the rift in the end sky
+#define ENABLE_END_SKY_STARS_INSIDE_RIFT
+
+// Remove the two slashes at the start of this line to enable the pixelization filter
+// #define ENABLE_END_SKY_PIXELIZATION
+#define END_SKY_PIXELIZATION_RESOLUTION 512
