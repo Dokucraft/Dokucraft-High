@@ -1,5 +1,5 @@
 {
-    "parent": "block/fence/fence_gate_closed",
+    "parent": "block/gate/fence_gate_closed",
     "textures": {
         "particle": "block/warped_planks",
         "0": "block/gate/warped_fence_gate"
