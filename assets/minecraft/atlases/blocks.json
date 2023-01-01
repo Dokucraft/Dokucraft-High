@@ -1,0 +1,11 @@
+{ "sources": [
+		{ "type": "directory",
+			"source": "entity/boat/item",
+			"prefix": "entity/boat/item/"
+		},
+		{ "type": "directory",
+			"source": "entity/chest_boat/item",
+			"prefix": "entity/chest_boat/item/"
+		}
+	]
+}
