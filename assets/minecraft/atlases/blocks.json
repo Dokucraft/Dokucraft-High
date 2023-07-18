@@ -53,6 +53,18 @@
         "path": "item/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_door$"
       }
     },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cherry_leaves$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(target|basalt)_(side|top)$"
+      }
+    },
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
@@ -62,13 +74,61 @@
 		{ "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/gilded_blackstone"
+        "path": "block/bamboo_fence(_gate)?(_particle)?$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(blackstone(_top)?|gilded_blackstone)$"
       }
     },
 		{ "type": "filter",
       "pattern": {
         "namespace": "minecraft",
         "path": "block/(big|small)_dripleaf_(side|stem|t[io]p)(_bottom|_top)?$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/brewing_stand_base$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cake_inner$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cartography_table_(side\\d|top)$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/cave_vines(_plant)?(_lit)?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/chiseled_bookshelf_(empty|occupied|side|top)$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/debug2?$"
+      }
+    },
+    { "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/((cobbled_|polished_)?deepslate|deepslate_top|(cracked_)?deepslate_(bricks|tiles))$"
       }
     },
 		{ "type": "filter",
@@ -86,7 +146,13 @@
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/fletching_table_side"
+        "path": "block/fletching_table_(front|side)$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/(glow_)?item_frame$"
       }
     },
 		{ "type": "filter",
@@ -105,6 +171,12 @@
       "pattern": {
         "namespace": "minecraft",
         "path": "block/(orange|pink|red|white)_tulip$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/polished_basalt_(side|top)$"
       }
     },
 		{ "type": "filter",
@@ -129,6 +201,12 @@
       "pattern": {
         "namespace": "minecraft",
         "path": "block/redstone_dust_(line1|overlay)$"
+      }
+    },
+		{ "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "block/mud$"
       }
     }
   ]
