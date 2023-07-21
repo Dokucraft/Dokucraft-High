@@ -56,7 +56,7 @@
     { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/(acacia|birch|cherry|(dark_)?oak|jungle|mangrove|spruce)_leaves$"
+        "path": "block/(acacia|(flowering_)?azalea|birch|cherry|(dark_)?oak|jungle|mangrove|spruce)_leaves$"
       }
     },
 		{ "type": "filter",
