@@ -53,10 +53,10 @@
         "path": "item/(acacia|bamboo|birch|cherry|crimson|(dark_)?oak|iron|jungle|mangrove|spruce|warped)_door$"
       }
     },
-		{ "type": "filter",
+    { "type": "filter",
       "pattern": {
         "namespace": "minecraft",
-        "path": "block/cherry_leaves$"
+        "path": "block/(acacia|birch|cherry|(dark_)?oak|jungle|mangrove|spruce)_leaves$"
       }
     },
 		{ "type": "filter",
