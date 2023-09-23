@@ -1,19 +1,19 @@
 #version 150
 
-#moj_import <utils.glsl>
-
-in vec4 vertexColor;
-in vec4 glpos;
+flat in vec4 vertexColor;
 
 uniform vec4 ColorModulator;
 
 out vec4 fragColor;
 
 void main() {
-  discardControlGLPos(gl_FragCoord.xy, glpos);
-  vec4 color = vertexColor;
-  if (color.a == 0.0) {
+  // This doesn't work for the chunk grid for some reason:
+  // discardControlGLPos(gl_FragCoord.xy, glpos);
+
+  // This gets rid of the entire bottom row of pixels, which does work for the chunk grid
+  if (gl_FragCoord.y < 1 || vertexColor.a == 0.0) {
     discard;
   }
-  fragColor = color * ColorModulator;
+
+  fragColor = vertexColor * ColorModulator;
 }

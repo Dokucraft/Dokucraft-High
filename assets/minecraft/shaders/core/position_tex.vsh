@@ -1,6 +1,8 @@
 #version 150
 
+#moj_import <../flavor.glsl>
 #moj_import <../config.txt>
+#moj_import <mob_effects.glsl>
 
 in vec3 Position;
 in vec2 UV0;
@@ -20,6 +22,16 @@ out float isSun;
 out float isNeg;
 out vec2 ScrSize;
 
+#ifdef ENABLE_MOB_EFFECTS
+  flat out int mobEffect;
+  flat out float time;
+  out vec4 glpos;
+  out vec2 rectA;
+  out vec2 rectB;
+  out vec2 texRectA;
+  out vec2 texRectB;
+#endif
+
 #ifdef ENABLE_POST_MOON_PHASES
   flat out float moonPhase;
 #endif
@@ -37,6 +49,7 @@ void main() {
   c3 = vec3(0.0);
   isSun = 0.0;
   vec2 tsize = textureSize(Sampler0, 0);
+  texCoord0 = UV0;
 
   // test if sun or moon. Position.y limit excludes worldborder.
   if (Position.y < SUNDIST  && Position.y > -SUNDIST && (ModelViewMat * vec4(Position, 1.0)).z > -SUNDIST) {
@@ -81,8 +94,66 @@ void main() {
     }
   }
 
+  #ifdef ENABLE_BUTTON_GRADIENTS
+    else {
+      const vec2[] corners = vec2[](vec2(0), vec2(0, 1), vec2(1), vec2(1, 0));
+      vec2 corner = corners[gl_VertexID % 4];
+      
+      cscale = vec3(corner, 1);
+    }
+  #endif
+
   gl_Position = candidate;
-  texCoord0 = UV0;
   isNeg = float(UV0.y < 0);
   ScrSize = 2 / vec2(ProjMat[0][0], -ProjMat[1][1]);
+
+  #ifdef ENABLE_MOB_EFFECTS
+    // Isolate mob effect icons
+    if (gl_Position.x > 0.8334 && tsize == vec2(256, 128)) {
+      int vx = int(gl_VertexID % 4 >= 2);
+      int vy = (gl_VertexID % 4 - vx) % 2;
+      vec2 v = vec2(vx, vy);
+      vec4 tcol = texture(Sampler0, texCoord0 - v / tsize);
+
+      if (
+        // Double-check that this is definitely a mob effect icon, otherwise
+        // this can break the moon if it is positioned correctly
+        tcol.ra == vec2(241.0/255.0, 16.0/255.0)
+
+        // Make sure that this specific effect is enabled so that the icon
+        // won't get stretched to cover the screen if it's not
+        && (false
+          #ifdef ENABLE_DARKNESS_EFFECT
+            || tcol.b == 215.0/255.0
+          #endif
+
+          #ifdef ENABLE_WITHER_EFFECT
+            || tcol.b == 216.0/255.0
+          #endif
+
+          #ifdef ENABLE_SPEED_EFFECT
+            || tcol.b == 217.0/255.0
+          #endif
+        )
+      ) {
+        vec2 omv = vec2(1) - v;
+        rectA = gl_Position.xy * omv;
+        rectB = gl_Position.xy * v;
+        texRectA = texCoord0 * omv;
+        texRectB = texCoord0 * v;
+        texCoord0 = v;
+        gl_Position.xy = vec2(vx, 1 - vy) * 2 - 1;
+        time = tcol.g;
+
+        if (tcol.b == 215.0/255.0) {
+          mobEffect = EFFECT_DARKNESS;
+        } else if (tcol.b == 216.0/255.0) {
+          mobEffect = EFFECT_WITHER;
+        } else if (tcol.b == 217.0/255.0) {
+          mobEffect = EFFECT_SPEED;
+        }
+      }
+    }
+    glpos = gl_Position;
+  #endif
 }

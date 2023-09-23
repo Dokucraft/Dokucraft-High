@@ -9,6 +9,11 @@
 #define LOADING_BG_DARK_COLOR vec3(0.043, 0.141, 0.207)
 #define LOADING_BG_COLOR vec3(0.043, 0.141, 0.207)
 
+// Fix for the gradients on the top/bottom of buttons
+#define ENABLE_BUTTON_GRADIENTS
+#define BUTTON_GRADIENT_COLOR_A vec3(1, 0.996, 0.596)
+#define BUTTON_GRADIENT_COLOR_B vec3(0.847, 0.756, 0.364)
+
 // Otherworldy Rift End sky colors
 #define END_SKY_RIFT_COLOR vec3(0.1, 0.45, 0.9)
 
