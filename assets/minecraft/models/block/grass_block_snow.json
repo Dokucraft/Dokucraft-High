@@ -1,10 +1,1 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "block/cube_bottom_top",
-	"textures": {
-		"bottom": "block/dirt",
-		"particle": "block/dirt",
-		"top": "block/snow",
-		"side": "block/grass_block_snow"
-	}
-}
+{"parent":"block/cube_bottom_top","textures":{"bottom":"block/dirt","particle":"block/dirt","top":"block/snow","side":"block/grass_block_snow"}}
