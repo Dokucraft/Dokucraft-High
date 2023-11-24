@@ -14,6 +14,9 @@
 #define BUTTON_GRADIENT_COLOR_A vec3(1, 0.996, 0.596)
 #define BUTTON_GRADIENT_COLOR_B vec3(0.847, 0.756, 0.364)
 
+// Grass color multiplier for shader grass effects
+#define GRASS_COLOR_MULTIPLIER 0.63
+
 // Otherworldy Rift End sky colors
 #define END_SKY_RIFT_COLOR vec3(0.1, 0.45, 0.9)
 
