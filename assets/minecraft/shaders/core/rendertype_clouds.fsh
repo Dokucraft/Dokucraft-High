@@ -17,10 +17,10 @@ in vec4 normal;
 out vec4 fragColor;
 
 void main() {
-    vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    if (color.a < 0.1) {
-        discard;
-    }
-    fragColor = vec4(mix(color.rgb, FogColor.rgb, 0.5), color.a);
-    fragColor.a *= smoothstep(FogEnd + 48, FogStart - 16, vertexDistance);
+  vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
+  if (color.a < 0.1) {
+    discard;
+  }
+  fragColor = vec4(mix(color.rgb, FogColor.rgb, 0.5), color.a);
+  fragColor.a *= smoothstep(FogEnd + 48, FogStart - 16, vertexDistance);
 }
