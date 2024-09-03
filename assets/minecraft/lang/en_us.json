@@ -5,6 +5,7 @@
   "gui.advancements": "§fAdvancements",
   "container.inventory": "§fInventory",
   "container.hopper": "§fItem Hopper",
+  "container.crafter": "§r         §fCrafter",
   "container.crafting": "§fCrafting",
   "container.dispenser": "§fDispenser",
   "container.dropper": "§fDropper",
