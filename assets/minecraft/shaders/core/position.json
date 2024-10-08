@@ -1,6 +1,6 @@
 {
-    "vertex": "position",
-    "fragment": "position",
+    "vertex": "minecraft:dokucraft/sky_core",
+    "fragment": "minecraft:dokucraft/sky_core",
     "samplers": [
     ],
     "uniforms": [
