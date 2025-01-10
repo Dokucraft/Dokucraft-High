@@ -14,9 +14,6 @@
 // Grass color multiplier for shader grass effects
 #define GRASS_COLOR_MULTIPLIER 0.63
 
-// Tint color for foliage items using biome colors
-#define FOLIAGE_ITEM_TINT vec3(0.243, 0.467, 0.294)
-
 // Procedural water surface colors
 #define PROCEDURAL_WATER_COLOR_1 vec3(0.176, 0.678, 0.765)
 #define PROCEDURAL_WATER_COLOR_2 vec3(0.297, 0.866, 0.952)
