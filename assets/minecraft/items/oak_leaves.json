@@ -1,6 +1,12 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/oak_leaves"
+    "model": "minecraft:item/oak_leaves",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": [0.243, 0.467, 0.294]
+      }
+    ]
   }
 }
