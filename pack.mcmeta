@@ -1,7 +1,6 @@
 {
   "pack": {
-    "supported_formats": [49, 49],
-    "pack_format": 49,
+    "pack_format": 50,
     "description": [
       { "text": "High and dry\n", "color": "#5685df" },
       { "text": "v1.21.5", "color": "#e0e0dc" },
