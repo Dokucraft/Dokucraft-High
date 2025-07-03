@@ -1,9 +1,11 @@
 {
+	"format_version": "1.21.6",
+	"credit": "Made by SyndiShanX",
 	"parent": "block/block",
 	"textures": {
 		"ends": "block/smooth_stone",
-		"sides": "block/smooth_stone_slab_side",
-		"particle": "block/smooth_stone_slab_side"
+		"particle": "block/smooth_stone_slab_side",
+		"sides": "block/smooth_stone_slab_side"
 	},
 	"elements": [
 		{
