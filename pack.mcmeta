@@ -1,7 +1,7 @@
 {
   "pack": {
-    "min_format": 89,
-    "max_format": 93,
+    "min_format": 94,
+    "max_format": 94,
     "description": [
       { "text": "High and dry\n", "color": "#5685df" },
       { "text": "v26.3", "color": "#e0e0dc" },
